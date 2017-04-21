@@ -51,3 +51,8 @@ h1, h3 {
 .btn {
 	margin-right: 10px;
 }
+
+.dataRow th {
+	padding: 10px;
+	font-weight: normal;
+}

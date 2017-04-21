@@ -23,12 +23,24 @@ $(document).ready(function(){
 			if(res.length > 4){
 				//loop through returned results of our ajax call and create table rows.
 				for(let i=0; i<5; i++){
-					dataToInsert += "<div class='dataWell'>" + res[i].id +  ".  Party name: " + res[i].name + "  Reveration date: " + res[i].startTime + "  Party size: " + res[i].partySize +"</div>";
+					dataToInsert += '<tr class="dataRow">' + 
+						'<th>' + res[i].id+ '</th>' + 
+						'<th>Party name: ' + res[i].name + '.</th>' +
+						'<th>Start time: ' + res[i].startTime + '</th>' +
+						'<th>Party size: ' + res[i].partySize + '</th>' +
+						'</tr>'
+					;
 				};//end loop.
 
 				//wait list divs
 				for(let i= 5; i < res.length; i++){
-					waitToInsert += "<div class='dataWell'>" + res[i].id +  ".  Party name: " + res[i].name + "  Reveration date: " + res[i].startTime + "  Party size: " + res[i].partySize +"</div>";
+					waitToInsert += '<tr class="dataRow">' + 
+						'<th>' + res[i].id+ '.</th>' + 
+						'<th>Party name: ' + res[i].name + '</th>' +
+						'<th>Start time: ' + res[i].startTime + '</th>' +
+						'<th>Party size: ' + res[i].partySize + '</th>' +
+						'</tr>'
+					;
 				};//end loop.
 
 				//once loop is finished, shove all that data onto the page.
@@ -37,7 +49,13 @@ $(document).ready(function(){
 			} else{
 				//reservation list divs
 				for(let i=0; i < res.length; i++){
-					dataToInsert += "<div class='dataWell'>" + res[i].id +  ".  Party name: " + res[i].name + "  Reveration date: " + res[i].startTime + "  Party size: " + res[i].partySize +"</div>";
+					dataToInsert += '<tr class="dataRow">' + 
+						'<th>' + res[i].id+ '.</th>' + 
+						'<th>Party name: ' + res[i].name + '</th>' +
+						'<th>Start time: ' + res[i].startTime + '</th>' +
+						'<th>Party size: ' + res[i].partySize + '</th>' +
+						'</tr>'
+					;
 				};//end loop.
 				//once loop is finished, shove all that data onto the page.
 				$('#dataTable').html(dataToInsert);
