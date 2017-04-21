@@ -1,0 +1,53 @@
+.container-heading {
+	margin-top: 100px;
+	background-color: rgba(255,255,255,.5);
+	padding: 75px;
+	border-radius: 10px;
+}
+
+.jumbotron-index {
+	background-image: url('pizza.jpeg');
+	background-size: cover;
+	height: 800px;
+	background-position: center center;
+}
+
+.jumbotron-reserve {
+	background-image: url('mason-jar.jpeg');
+	background-size: cover;
+	height: 800px;
+}
+.jumbotron-tables {
+	background-image: url('shake.jpeg');
+	background-size: cover;
+	height: 800px;
+}
+
+.fa-snowflake-o {
+	margin: 0 20px;
+	color: #337ab7;
+}
+
+.fa-th-list {
+	margin: 0 10px;
+}
+
+.fa-home {
+	margin: 0 10px;
+}
+
+.fa-wpforms {
+	margin: 0 10px;
+}
+
+.subtitle {
+	margin: 50px 0;
+}
+
+h1, h3 {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+.btn {
+	margin-right: 10px;
+}

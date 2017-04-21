@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en-us">
+	<meta charset="utf-8">
+	<title>Current Reservations</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Link to JavaScript files -->
+	<script type="text/javascript" src="frontEnd.js"></script>
+
+	<!-- Link to CSS files -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+</head>
+<body>
+	<div class="jumbotron jumbotron-reserve text-center">
+		<div class="container container-heading">
+			<h1 class="title">Reserve a Table!</h1>
+			<hr />
+			<h3 class="subtitle">Current Reservations and Waiting List</h3>
+			<a href="/"><button class="btn btn-lg btn-primary" id="home"><i class="fa fa-home" aria-hidden="true"></i>Home</button></a>
+			<a href="tables"><button class="btn btn-lg btn-danger" id="view-tables"><i class="fa fa-wpforms" aria-hidden="true"></i>View Tables</button></a>
+		</div>
+	</div>
+		<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+		    	<h3 class="panel-title">Table Reservation</h3>
+		  	</div>		  
+		  <div class="panel-body">
+		   <form id="new-reservation-form" method="POST" action="/reserve">
+			  <div class="form-group">
+			    <label for="name">Full Name</label>
+			    <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+			  </div>
+			  <div class="form-group">
+			    <label for="phoneNumber">Phone Number</label>
+			    <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Phone Number">
+			  </div>
+			  <div class="form-group">
+			    <label for="email">Email</label>
+			    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+			    <label for="startTime">Start Time</label>
+			    <input type="text" name="startTime" class="form-control" id="startTime" placeholder="Name">
+			  </div>
+			  <div class="form-group">
+			  <label for="partySize">Party Size</label>
+			  <input type="text" name="partySize" class="form-control" id="partySize" placeholder="#">
+			  </div>
+			  <button type="submit" class="btn btn-success">Submit</button>
+		  </form>
+		  </div>
+		</div>
+		<div id="links">
+			<p id="control-panel">Control Panel</p>
+			<a href="#">Clear Table</a> |
+			<a href="#">API Table Link</a> |
+			<a href="#">API Wait List</a>
+		</div>
+	</div>
+</body>
+</html>

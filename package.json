@@ -1,0 +1,25 @@
+{
+  "name": "restaurantapp",
+  "version": "1.0.0",
+  "description": "restaurant reservation app",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikehawk10/restaurantapp.git"
+  },
+  "author": "Ana Isaac Jillian Stephen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikehawk10/restaurantapp/issues"
+  },
+  "homepage": "https://github.com/ikehawk10/restaurantapp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0"
+  }
+}
